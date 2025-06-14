@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelMind: AI Financial Assistant</title>
+</head>
+<body>
+    <h1>ModelMind: DocuBridge's AI Financial Modeling Assistant</h1>
+    <p>Upload a financial model (Excel file) and ask questions about the data in plain English.</p>
+
+    <!-- The Q&A interface will go here later -->
+    <!-- Add this form to your index.html file -->
+    <hr>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="excel_file">Upload Excel File:</label><br>
+            <input type="file" id="excel_file" name="excel_file" accept=".xls, .xlsx" required>
+            <p><small>Allowed file types: .xls, .xlsx</small></p>
+        </div>
+        <br>
+        <div>
+            <label for="user_question">Ask a question:</label><br>
+            <textarea id="user_question" name="user_question" rows="4" cols="50" required></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Analyze</button>
+        </div>
+    </form>
+</body>
+</html>
